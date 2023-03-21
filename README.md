@@ -9,7 +9,7 @@ This repository is divided in terraform modules:
     - security groups were created, one for the bastion VM and one for the fleet
     - each ssk key for the vm fleet is saved on the bastion host in a specific location
     - at the end, a nul_resource is used in order to simulate a roundrobbin fashion of pinging the VMs in the fleet
-
+    - the local script.sh file contains the script for round-robbin ping fashion
 ## Variables
 Notable variables:
 - the VM type and VM ami are configurable from the .tfvars file (for both bastion and fleet vm)
